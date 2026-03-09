@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bom diaaaaa, amooor da minha vidaaa ❤️🫵</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:
+radial-gradient(circle at top, rgba(255,255,255,0.5), transparent),
+linear-gradient(135deg,#a6d8ff,#cfeeff,#e8f7ff);
+
+min-height:100vh;
+
+padding:30px;
+
+}
+
+/* container */
+
+.container{
+
+max-width:950px;
+margin:auto;
+text-align:center;
+
+}
+
+/* caixa principal */
+
+.caixa{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.12),
+0 0 60px rgba(120,180,255,0.2);
+
+margin-bottom:50px;
+
+}
+
+/* titulo */
+
+h1{
+
+font-family:'Pacifico',cursive;
+
+color:#2a7de1;
+
+font-size:32px;
+
+margin-bottom:15px;
+
+}
+
+/* texto */
+
+p{
+
+font-size:17px;
+
+color:#444;
+
+line-height:1.7;
+
+margin-top:12px;
+
+}
+
+/* botão */
+
+button{
+
+margin-top:25px;
+
+padding:13px 28px;
+
+border:none;
+
+border-radius:40px;
+
+background:linear-gradient(45deg,#5aa9ff,#7bc4ff);
+
+color:white;
+
+font-size:15px;
+
+font-weight:600;
+
+cursor:pointer;
+
+box-shadow:0 6px 15px rgba(90,170,255,0.4);
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-2px) scale(1.04);
+
+box-shadow:0 10px 20px rgba(90,170,255,0.5);
+
+}
+
+/* carta */
+
+.carta{
+
+display:none;
+
+margin-top:25px;
+
+background:#f2f9ff;
+
+padding:22px;
+
+border-radius:15px;
+
+border:1px solid #cde8ff;
+
+animation:fade .6s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(10px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* galeria */
+
+.galeria{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:35px;
+
+margin-top:40px;
+
+}
+
+/* polaroid */
+
+.polaroid{
+
+background:white;
+
+padding:12px 12px 28px 12px;
+
+border-radius:6px;
+
+box-shadow:0 12px 20px rgba(0,0,0,0.18);
+
+transform:rotate(-2deg);
+
+transition:0.35s;
+
+}
+
+.polaroid:nth-child(2){
+
+transform:rotate(3deg);
+
+}
+
+.polaroid:nth-child(3){
+
+transform:rotate(-4deg);
+
+}
+
+.polaroid:nth-child(4){
+
+transform:rotate(2deg);
+
+}
+
+.polaroid:hover{
+
+transform:scale(1.07) rotate(0deg);
+
+}
+
+/* imagem */
+
+.polaroid img{
+
+width:100%;
+
+border-radius:4px;
+
+}
+
+/* legenda */
+
+.legenda{
+
+margin-top:10px;
+
+font-size:15px;
+
+color:#555;
+
+font-weight:500;
+
+}
+
+/* corações */
+
+.coracao{
+
+position:fixed;
+
+bottom:-20px;
+
+font-size:22px;
+
+color:#2a7de1;
+
+animation:subir 7s linear infinite;
+
+opacity:.8;
+
+}
+
+@keyframes subir{
+
+0%{
+transform:translateY(0);
+opacity:0;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+
+}
+
+/* celular */
+
+@media (max-width:600px){
+
+h1{
+font-size:26px;
+}
+
+p{
+font-size:16px;
+}
+
+.caixa{
+padding:28px;
+}
+
+}
+
+</style>
+
+<script>
+
+function abrirCarta(){
+
+const carta = document.getElementById("carta")
+
+if(carta.style.display === "block"){
+carta.style.display = "none"
+}else{
+carta.style.display = "block"
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="caixa">
+
+<h1>Bom diaaa, amor da minha vidaaaa ❤️🫵</h1>
+
+<p>
+Só queria começar o seu dia te lembrando o quanto você é especial pra mim.
+</p>
+
+<p>
+Espero que hoje seja leve, bonito e cheio de coisas boas.
+E mesmo quando a gente não estiver junto, lembra que tem alguém aqui pensando em você.
+</p>
+
+<p>
+Colossenses 3:14  
+"Acima de tudo, tenham amor, pois o amor une perfeitamente todas as coisas."
+</p>
+
+<button onclick="abrirCarta()">Abrir mensagem 💌</button>
+
+<div class="carta" id="carta">
+
+<p>
+Eu só queria que você soubesse que tenho muita sorte de ter você na minha vida.
+</p>
+
+<p>
+Você deixa meus dias mais leves, mais felizes e muito mais bonitos.
+</p>
+
+<p>
+Que Deus cuide de você hoje e sempre.
+</p>
+
+<p>
+Eu te amo muuiitoo ❤️🫵
+</p>
+
+</div>
+
+</div>
+
+<div class="galeria">
+
+<div class="polaroid">
+<img src="img/foto1.jpg">
+<div class="legenda">Te</div>
+</div>
+
+<div class="polaroid">
+<img src="img/foto2.jpg">
+<div class="legenda">Amo</div>
+</div>
+
+<div class="polaroid">
+<img src="img/foto3.jpg">
+<div class="legenda">Muito</div>
+</div>
+
+<div class="polaroid">
+<img src="img/foto4.jpg">
+<div class="legenda">❤️</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="coracao" style="left:10%">❤️</div>
+<div class="coracao" style="left:30%;animation-delay:2s">❤️</div>
+<div class="coracao" style="left:50%;animation-delay:4s">❤️</div>
+<div class="coracao" style="left:70%;animation-delay:1s">❤️</div>
+<div class="coracao" style="left:90%;animation-delay:3s">❤️</div>
+
+</body>
+</html>
